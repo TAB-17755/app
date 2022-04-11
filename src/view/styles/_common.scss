@@ -1,0 +1,68 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    width: 150px;
+    background-color: $dark-bg;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: 'Ubuntu-Bold';
+    font-size: 18px;
+    color: $aqua;
+    text-align: center;
+    cursor: pointer;
+}
+
+.loadingSpinner {
+    @keyframes spinner {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    width: 20px;
+    height: 20px;
+    border: 3px solid $aqua;
+    border-top: 3px solid $dark-bg;
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+.navigationLink {
+    font-family: 'Ubuntu-Bold';
+    font-size: 1.5rem;
+    color: $gray;
+}
+
+.navigationLink--current {
+    color: $aqua;
+}
+
+.checkBox {
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
+    background-color: $light;
+    cursor: pointer;
+}
+
+.colorPicker {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    .color {
+        width: 50px;
+        height: 50px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+}

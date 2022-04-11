@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 18px;
+    color: $gray;
+    font-family: 'Ubuntu-Regular';
+}
+
+body {
+    margin: 0;
+    background-color: $white;
+}
+
+ul,
+ol {
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+li,
+p {
+    margin: 0;
+}

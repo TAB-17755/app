@@ -1,0 +1,148 @@
+.todoWrapper {
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.todoLeftSection {
+    display: flex;
+    flex: 1;
+}
+
+.todoList {
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    max-width: 600px;
+
+    .listHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10;
+    }
+
+    ul li:nth-child(odd) {
+        background-color: $dark-bg;
+    }
+}
+
+.todoListStatusWrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .todoListStatus {
+        display: flex;
+        width: 150px;
+        height: 41px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.toDoItem {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    padding: 8px 18px;
+    border: 3px solid $dark-bg;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    .color {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .itemInfo {
+        margin-right: auto;
+
+        .title {
+            font-family: 'Ubuntu-Medium';
+            font-size: 24px;
+            color: $white;
+        }
+
+        .description {
+            font-family: 'Ubuntu-Regular';
+            font-size: 18px;
+        }
+    }
+
+    .actions {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -80px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .action {
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .edit, .delete {
+        cursor: pointer;
+    }
+}
+
+.newTodo {
+    max-width: 600px;
+    border-radius: 10px;
+    border: 3px solid $dark-bg;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    label {
+        margin-bottom: 10px;
+
+        font-family: 'Ubuntu-Medium';
+        font-size: 18px;
+        color: $white;
+    }
+
+
+    input, textarea {
+        margin-bottom: 15px;
+        outline: none;
+
+        padding: 3px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 24px;
+    }
+
+    textarea {
+        height: 80px;
+        resize: none;
+    }
+
+    .addButton {
+        margin: 0 auto;
+        margin-top: 20px;
+        font-family: 'Ubuntu-Medium';
+        font-size: 18px;
+        color: $white;
+        background-color: $dark-bg;
+        text-align: center;
+        padding: 10px;
+        width: 50%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
